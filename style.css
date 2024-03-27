@@ -98,6 +98,11 @@ label img{
     padding: 1em;
     border-radius: 50%;
 }
+label:hover img{
+    transform: scale(1.10);
+    background-color: #3457DC;
+    transition: 0.3s ease;
+}
 #tema:checked + main > article > .card-1{
     background-color: black;
     color: white;
