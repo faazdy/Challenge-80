@@ -1,0 +1,92 @@
+:root{
+    --fuente: "Mulish", sans-serif;
+    --bodybg: #1A1B38;
+    --cardbg: #FFFFFF;
+    --btnbg: #3457DC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bodybg);
+    padding: 1.8em;
+}
+main{
+    background-image: url(img/oval-sm.png), url(img/oval-lg.png);
+    background-repeat: no-repeat;
+    /*img1 img2*/
+    background-position: bottom left, top right;
+    background-size: 25%, 40%;
+    background-color: var(--bodybg);
+}
+.info{
+    margin: 10vh auto;
+    width: 450px;
+    text-align: center;
+    color: var(--cardbg);
+}
+.info h1{
+    margin: 1.5em 0;
+    font-size: 35px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+.card-1,
+.card-2{
+    background-color: var(--cardbg);
+    padding: 3em;
+    border-radius: 5px;
+}
+
+hr{
+    margin: 1em 0;
+    border: none;
+    border: 1px solid #cccccc56;
+}
+h2, h3{
+    color: var(--bodybg);
+    padding: 1em 0;
+}
+
+.card-1{
+    width: 40%;
+}
+.card-2 li{
+    list-style: none;
+    margin: 2em 0;
+    width: 90%;
+}
+li::before{
+    content: '✔';
+    padding: 5px;
+    margin-right: .5em;
+    background-color: #cccccc57;
+    border-radius: 50%;
+}
+.card-2 button{
+    background-color: var(--btnbg);
+    color: var(--cardbg);
+    font-weight: bold;
+    border: none;
+    border: 1px solid var(--btnbg);
+    border-radius: 20px;
+    padding: .5em 1.5em;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: #1A1B38;
+    transition: .3s ease;
+}
+
+
