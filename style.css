@@ -89,6 +89,33 @@ button:hover{
     transition: .3s ease;
 }
 
+#tema{
+    display: none;
+}
+label img{
+    cursor: pointer;
+    background-color: #3456dc5d;
+    padding: 1em;
+    border-radius: 50%;
+}
+#tema:checked + main > article > .card-1{
+    background-color: black;
+    color: white;
+}
+#tema:checked + main > article > .card-2{
+    background-color: black;
+    color: white;
+}
+#tema:checked + main > article > .card-1 h2,
+#tema:checked + main > article > .card-1 h3 {
+    color: white;
+}
+
+#tema:checked + main > article > .card-2 h2,
+#tema:checked + main > article > .card-2 h3 {
+    color: white;
+}
+
 @media screen and (max-width: 850px){
     .container{
         align-items: center;
@@ -99,5 +126,4 @@ button:hover{
         width: 80%;
     }
 }
-
 
